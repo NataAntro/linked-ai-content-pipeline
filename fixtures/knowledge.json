@@ -1,0 +1,52 @@
+[
+  {
+    "id": "agent-reliability",
+    "text": "Надёжный AI-агент ограничивает число шагов, валидирует результат, классифицирует временные ошибки и сохраняет трассу решений для восстановления.",
+    "source_url": "https://example.test/knowledge/agent-reliability"
+  },
+  {
+    "id": "agent-marketing",
+    "text": "Маркетинговая платформа называет любой чат-бот автономным агентом и обещает мгновенную автоматизацию без описания лимитов, трассировки и контроля ошибок.",
+    "source_url": "https://example.test/knowledge/agent-marketing"
+  },
+  {
+    "id": "retrieval-quality",
+    "text": "Качество семантического поиска в RAG зависит от chunking, модели embeddings, метрики близости, релевантности ранжирования и ссылок на источники.",
+    "source_url": "https://example.test/knowledge/retrieval-quality"
+  },
+  {
+    "id": "keyword-search",
+    "text": "Точный keyword search хорошо находит артикулы и имена, но не заменяет семантический retrieval для перефразированных вопросов.",
+    "source_url": "https://example.test/knowledge/keyword-search"
+  },
+  {
+    "id": "editorial-evaluation",
+    "text": "Редакционный evaluation проверяет фактическую опору, ясность, повторы, стилевые риски и неподтверждённые числовые утверждения до передачи текста человеку.",
+    "source_url": "https://example.test/knowledge/editorial-evaluation"
+  },
+  {
+    "id": "prompt-injection",
+    "text": "Контент источника считается недоверенным вводом: инструкции внутри документа не исполняются, а prompt injection проверяется отдельным adversarial case.",
+    "source_url": "https://example.test/knowledge/prompt-injection"
+  },
+  {
+    "id": "privacy-minimization",
+    "text": "Минимизация данных перед LLM удаляет прямые идентификаторы, ограничивает длину контекста и передаёт только поля, необходимые для редакционной задачи.",
+    "source_url": "https://example.test/knowledge/privacy-minimization"
+  },
+  {
+    "id": "evaluation-drift",
+    "text": "Регрессионная оценка фиксирует версии модели, prompt и dataset, выполняет несколько прогонов и сравнивает распределения метрик для обнаружения drift.",
+    "source_url": "https://example.test/knowledge/evaluation-drift"
+  },
+  {
+    "id": "hybrid-retrieval",
+    "text": "Hybrid retrieval объединяет семантический vector search с keyword сигналом, после чего reranker уточняет порядок документов-кандидатов.",
+    "source_url": "https://example.test/knowledge/hybrid-retrieval"
+  },
+  {
+    "id": "citation-grounding",
+    "text": "Grounded generation связывает проверяемые утверждения с разрешёнными source URL; citation precision отклоняет неизвестные ссылки, а citation recall обнаруживает пропуски.",
+    "source_url": "https://example.test/knowledge/citation-grounding"
+  }
+]

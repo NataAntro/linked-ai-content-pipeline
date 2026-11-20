@@ -1,0 +1,44 @@
+[
+  {
+    "query": "Как ограничить шаги агента и продолжить работу после временной ошибки?",
+    "expected_document_ids": ["agent-reliability"],
+    "excluded_document_ids": ["agent-marketing"]
+  },
+  {
+    "query": "От чего зависит качество embeddings, chunking и ранжирования RAG?",
+    "expected_document_ids": ["retrieval-quality"],
+    "excluded_document_ids": ["keyword-search"]
+  },
+  {
+    "query": "Какие проверки текста нужны до передачи редактору?",
+    "expected_document_ids": ["editorial-evaluation"]
+  },
+  {
+    "query": "Как не выполнить инструкцию, спрятанную внутри полученного документа?",
+    "expected_document_ids": ["prompt-injection"]
+  },
+  {
+    "query": "Как сократить персональные данные перед отправкой внешней модели?",
+    "expected_document_ids": ["privacy-minimization"]
+  },
+  {
+    "query": "Как обнаруживать drift после смены версии prompt или модели?",
+    "expected_document_ids": ["evaluation-drift"]
+  },
+  {
+    "query": "Как объединить vector search, ключевые слова и reranker?",
+    "expected_document_ids": ["hybrid-retrieval", "keyword-search"]
+  },
+  {
+    "query": "Какими метриками проверить полноту и точность ссылок на источники?",
+    "expected_document_ids": ["citation-grounding", "editorial-evaluation"]
+  },
+  {
+    "query": "Почему один успешный запуск модели не доказывает стабильность?",
+    "expected_document_ids": ["evaluation-drift"]
+  },
+  {
+    "query": "Чем семантический поиск отличается от точного поиска по словам?",
+    "expected_document_ids": ["retrieval-quality", "keyword-search"]
+  }
+]

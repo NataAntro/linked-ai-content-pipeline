@@ -1,0 +1,30 @@
+[
+  {
+    "id": "article-001",
+    "title": "Надёжные AI-pipeline на Python",
+    "body": "Команда отделила collectors от orchestration и добавила изоляцию частичных отказов.",
+    "url": "https://example.test/articles/reliable-ai?utm_source=daily-digest",
+    "published_at": "2026-07-16T09:00:00+00:00"
+  },
+  {
+    "id": "article-001-copy",
+    "title": "  Надёжные AI-pipeline   на Python ",
+    "body": "Команда отделила collectors от orchestration и добавила изоляцию частичных отказов.",
+    "url": "https://example.test/articles/reliable-ai?utm_campaign=duplicate",
+    "published_at": "2026-07-16T09:05:00+00:00"
+  },
+  {
+    "id": "article-002",
+    "title": "Конфигурируемый scoring материалов",
+    "body": "Веса источников и ключевых слов вынесены в TOML, поэтому правила можно проверять отдельно.",
+    "url": "https://example.test/articles/configurable-scoring",
+    "published_at": "2026-07-15T12:30:00+00:00"
+  },
+  {
+    "id": "article-003",
+    "title": "Обзор инструментов наблюдаемости",
+    "body": "Короткий материал о reliability и диагностике сервисов.",
+    "url": "https://example.test/articles/observability?ref=fixture",
+    "published_at": "2026-07-14T08:00:00+00:00"
+  }
+]

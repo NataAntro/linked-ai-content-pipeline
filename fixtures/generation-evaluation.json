@@ -1,0 +1,68 @@
+[
+  {
+    "id": "agent-recovery",
+    "title": "Надёжность редакционного агента",
+    "body": "Ограниченный бюджет шагов и трасса решений позволяют остановить цикл и восстановить обработку после временной ошибки.",
+    "url": "https://example.test/materials/agent-recovery",
+    "required_terms": ["бюджет", "трасса"],
+    "context": [
+      {"id": "agent-contract", "text": "Агент валидирует результат после каждого шага.", "source_url": "https://example.test/context/agent-contract"},
+      {"id": "agent-retry", "text": "Повтор разрешён только для классифицированной временной ошибки.", "source_url": "https://example.test/context/agent-retry"}
+    ]
+  },
+  {
+    "id": "rag-grounding",
+    "title": "Проверяемый RAG",
+    "body": "RAG-ответ должен опираться на найденные документы и сохранять ссылки, по которым редактор проверит исходный контекст.",
+    "url": "https://example.test/materials/rag-grounding",
+    "required_terms": ["документы", "ссылки"],
+    "context": [
+      {"id": "retrieval", "text": "Recall измеряет полноту найденных релевантных документов.", "source_url": "https://example.test/context/retrieval"},
+      {"id": "citations", "text": "Citation precision отклоняет URL, которых не было в разрешённом контексте.", "source_url": "https://example.test/context/citations"}
+    ]
+  },
+  {
+    "id": "privacy",
+    "title": "Минимизация данных перед LLM",
+    "body": "Перед внешней моделью редакционный сервис удаляет прямые идентификаторы и ограничивает материал полями, необходимыми для задачи.",
+    "url": "https://example.test/materials/privacy",
+    "required_terms": ["идентификаторы", "необходимыми"],
+    "context": [
+      {"id": "redaction", "text": "Email и телефон заменяются маркерами до построения prompt.", "source_url": "https://example.test/context/redaction"},
+      {"id": "retention", "text": "Диагностический trace не хранит полный исходный текст.", "source_url": "https://example.test/context/retention"}
+    ]
+  },
+  {
+    "id": "evaluation-drift",
+    "title": "Регрессионная оценка LLM",
+    "body": "Несколько прогонов на фиксированном dataset показывают стабильность результата и обнаруживают drift после смены модели или prompt.",
+    "url": "https://example.test/materials/evaluation-drift",
+    "required_terms": ["прогонов", "drift"],
+    "context": [
+      {"id": "distribution", "text": "Stability rate агрегирует успешные запуски одного case.", "source_url": "https://example.test/context/distribution"},
+      {"id": "versioning", "text": "Отчёт фиксирует версию evaluation contract и провайдера.", "source_url": "https://example.test/context/versioning"}
+    ]
+  },
+  {
+    "id": "editorial-quality",
+    "title": "Редакционный quality gate",
+    "body": "До публикации черновик проходит проверку ясности, повторов, шаблонных формулировок и сходства с уже принятыми материалами.",
+    "url": "https://example.test/materials/editorial-quality",
+    "required_terms": ["ясности", "сходства"],
+    "context": [
+      {"id": "slop", "text": "Anti-slop gate отклоняет рекламные клише и пустые обещания.", "source_url": "https://example.test/context/slop"},
+      {"id": "similarity", "text": "Similarity gate сохраняет разнообразие выпуска.", "source_url": "https://example.test/context/similarity"}
+    ]
+  },
+  {
+    "id": "semantic-search",
+    "title": "Семантический поиск и reranking",
+    "body": "Vector retrieval формирует кандидатов, а reranker уточняет порядок с учётом смысла запроса и редакционной релевантности.",
+    "url": "https://example.test/materials/semantic-search",
+    "required_terms": ["retrieval", "reranker"],
+    "context": [
+      {"id": "embeddings", "text": "Embeddings переводят запрос и документы в совместимое векторное пространство.", "source_url": "https://example.test/context/embeddings"},
+      {"id": "hybrid", "text": "Hybrid search добавляет точный keyword signal к vector score.", "source_url": "https://example.test/context/hybrid"}
+    ]
+  }
+]
